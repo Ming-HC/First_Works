@@ -208,7 +208,6 @@ img {
 .sidebar .sidebar_title {
 	height: 30px;
 	border-bottom: 1px solid #E0E0E0;
-
 }
 .sidebar h3 {
 	margin: 3px 0;
@@ -224,24 +223,22 @@ img {
 .sidebar .history img {
 	max-width: 170px;
 }
-
-
 .footer {
 	display: inline-block;
+  margin: 0;
 	height: 100px;
-	margin: 0;
 	width: 100%;
 }
 .footer .social {
-	float: left;
-	padding: 0 10px 10px 10px;
-	width: 89%;
+	margin: 0 10px 10px 10px;
 }
 .footer .rule {
 	float: right;
-	padding: 0 10px 10px 0;
-	margin-top: 80px;
-	width: 10%;
+	margin: 80px 0 10px 10px;
+}
+.footer .rule a {
+  width: 135px;
+  height: 20px;
 }
 
 @media  (max-width: 1024px) {
@@ -279,16 +276,10 @@ img {
     left: 0;
     z-index: 3;
   }
+  .sidebar {
+    display: none;
+  }
 }
-/*@media screen and (max-width: 480px) {		/*computer
-  .HEADER label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  .HEADER nav ul li a{
-    font-size: 16px;
-  }
-}*/
 @media (max-width: 768px) {		/* phone */
   .HEADER .checkbtn{
     display: block;
@@ -296,7 +287,6 @@ img {
   }
   .HEADER label.logo {
     padding: 0;
-
     margin: 0 0 0 20px;
   }
   .HEADER .search_box {
@@ -329,9 +319,13 @@ img {
     left: 0;
     z-index: 3;
   }
-  .article {
-    margin: 0 20px 0 20px;
+  .middle {
+    margin: 0;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .article {
     display: block;
   }
   .container {
@@ -373,21 +367,14 @@ img {
     opacity: 0.9;
     z-index: 2;
   }
-  .container .card .face.face2 .content a {
-  }
-  .sidebar {
+  /*.sidebar {
     margin: 40px 22% 0 22%;
-  }
+  }*/
   .footer {
     margin-top: 20px;
     border-top: 1px solid #333;
   }
-  .footer .rule {
-  	float: right;
-  	padding: 0 10px 10px 0;
-  	margin-top: 80px;
-  	width: 30%;
-  }
+
 }
 @media (max-width:480px) {
   .HEADER .checkbtn{
@@ -396,12 +383,26 @@ img {
   .HEADER label.logo {
     margin-left: 0;
   }
+  .middle {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .rule {
+    width: 40%;
+  }
 }
 @media (max-width:360px) {
   .HEADER .search_box {
     display: none;
   }
-  .article {
-    margin: 0 5px;
+  .middle {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .rule {
+    width: 40%;
   }
 }
