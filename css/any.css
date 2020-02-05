@@ -20,7 +20,6 @@ img {
   display: flex;
 	float: right;
 	height: 44px;
-  /*width: 14%;*/
   margin: 18px 0;
 	border: 3px solid #32e17c;
 	border-radius: 50px;
@@ -148,7 +147,7 @@ img {
 .container .card:hover .face.face1 .content {
   opacity: 1;
 }
-.container .card .face.face1 .content img { /*縮小*/
+.container .card .face.face1 .content img {
   max-width: 170px;
 }
 .container .card .face.face1 .content h3 {
@@ -156,7 +155,6 @@ img {
   padding: 0;
   color: black;
   text-align: center;
-  /*font-size: 1.5em;*/
 }
 .container .card .face.face2 {
   position: relative;
@@ -198,6 +196,7 @@ img {
 }
 .sidebar {
 	display: inline-block;
+  /*display: none;*/
 	float: right;
 	margin: 120px 10px 10px auto;
 	width: 250px;
@@ -240,7 +239,16 @@ img {
   width: 135px;
   height: 20px;
 }
-
+@media (max-width: 1340px) {
+  .sidebar {
+    width: auto;
+  }
+}
+@media (max-width: 1280px) {
+  .sidebar {
+    display: none;
+  }
+}   /*hidden sidebar*/
 @media  (max-width: 1024px) {
   .HEADER .checkbtn{
     display: block;
@@ -367,16 +375,21 @@ img {
     opacity: 0.9;
     z-index: 2;
   }
-  /*.sidebar {
-    margin: 40px 22% 0 22%;
-  }*/
+  .sidebar {
+    display: inline-block;
+  }
   .footer {
     margin-top: 20px;
     border-top: 1px solid #333;
   }
 
 }
-@media (max-width:480px) {
+@media (max-width: 580px) {
+  .sidebar {
+    display: none;
+  }
+}  /*hidden sidebar*/
+@media (max-width: 480px) {
   .HEADER .checkbtn{
     margin-right: 10px;
   }
@@ -402,6 +415,6 @@ img {
     padding: 0;
   }
   .footer .rule {
-    width: 40%;
+    width: 50%;
   }
 }
