@@ -11,7 +11,9 @@
 .HEADER {
   font-family: Verdana;
   overflow: hidden;
+
 }
+
 .HEADER .search_box {
   display: flex;
 	float: right;
