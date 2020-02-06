@@ -414,9 +414,8 @@ img {
   .HEADER .search_box .txt {
     width: 80px;
   }
-  .article {
-    margin: 0 0 0 10px;
-    padding: 0;
+  .container .card .face {
+    width: 220px;
   }
   .footer .rule {
     width: 50%;
