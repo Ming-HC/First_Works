@@ -414,7 +414,15 @@ img {
   .HEADER .search_box .txt {
     width: 80px;
   }
+<<<<<<< HEAD
   .container .card, .container .card .face {
+=======
+  .container .card {
+    height: 200px;
+    width: 230px;
+  }
+  .container .card .face {
+>>>>>>> 0b7c015735c50854312617671d73de1e234ab441
     height: 200px;
     width: 230px;
   }
