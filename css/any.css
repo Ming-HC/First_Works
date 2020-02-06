@@ -402,6 +402,10 @@ img {
     justify-content: center;
     align-items: center;
   }
+  .article {
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
   .footer .rule {
     width: 40%;
   }
