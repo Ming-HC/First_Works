@@ -41,7 +41,7 @@ img {
 .HEADER .txt:focus {
 	outline:none;
 }
-.HEADER .btn {
+.HEADER .search_box .btn {
 	display: flex;
 	float: right;
 	color: #e84118;
@@ -53,7 +53,9 @@ img {
 	justify-content: center;
 	align-items: center;
 }
-
+.HEADER .search_box .btn a {
+  outline: none;
+}
 .HEADER label.logo {
   display: flex;
   float: left;
@@ -89,7 +91,6 @@ img {
   background: #6FB7B7;
 	color: black;
 }
-
 .HEADER .checkbtn {
   font-size: 30px;
   color: white;
@@ -98,11 +99,11 @@ img {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  outline:none;
 }
 .HEADER #check {
   display: none;
 }
-
 .middle {
 	height: 1210px;
 }
@@ -195,6 +196,7 @@ img {
 }
 .sidebar {
 	display: inline-block;
+  /*display: none;*/
 	float: right;
 	margin: 120px 10px 10px auto;
 	width: 250px;
@@ -255,7 +257,7 @@ img {
   .HEADER label.logo {
     width: 79%;
   }
-    .HEADER nav ul {
+	.HEADER nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -412,9 +414,14 @@ img {
   .HEADER .search_box .txt {
     width: 80px;
   }
-  .container .card .face {
-    width: 220px;
+  .container .card, .container .card .face {
+    height: 200px;
+    width: 230px;
   }
+  /*.container .card .face {
+    height: 200px;
+    width: 230px;
+  }*/
   .footer .rule {
     width: 50%;
   }
