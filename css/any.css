@@ -70,7 +70,6 @@ img {
   width: 100%;
 }
 .HEADER nav ul {
-  /*float: right;*/
   margin: 0 100px;
   width: 59%;
 }
@@ -91,7 +90,7 @@ img {
 	color: black;
 }
 
-.HEADER .checkbtn {       /*phone時選單*/
+.HEADER .checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -249,7 +248,7 @@ img {
     display: none;
   }
 }   /*hidden sidebar*/
-@media  (max-width: 1024px) {
+@media (max-width: 1024px) {
   .HEADER .checkbtn{
     display: block;
     margin-left: 10px;
@@ -310,6 +309,7 @@ img {
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 3;
   }
   .HEADER nav ul li {
     display: block;
@@ -325,7 +325,6 @@ img {
   }
   .HEADER #check:checked ~ ul {
     left: 0;
-    z-index: 3;
   }
   .middle {
     margin: 0;
@@ -402,6 +401,10 @@ img {
     justify-content: center;
     align-items: center;
   }
+  .article {
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
   .footer .rule {
     width: 40%;
   }
@@ -410,9 +413,8 @@ img {
   .HEADER .search_box .txt {
     width: 80px;
   }
-  .article {
-    margin: 0;
-    padding: 0;
+  .container .card .face {
+    width: 220px;
   }
   .footer .rule {
     width: 50%;
