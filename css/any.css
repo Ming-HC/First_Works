@@ -412,8 +412,13 @@ img {
   .HEADER .search_box .txt {
     width: 80px;
   }
+  .container .card {
+    height: 200px;
+    width: 230px;
+  }
   .container .card .face {
-    width: 220px;
+    height: 200px;
+    width: 230px;
   }
   .footer .rule {
     width: 50%;
