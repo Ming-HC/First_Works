@@ -91,7 +91,7 @@ img {
 	color: black;
 }
 
-.HEADER .checkbtn {       /*phone時選單*/
+.HEADER .checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -196,7 +196,6 @@ img {
 }
 .sidebar {
 	display: inline-block;
-  /*display: none;*/
 	float: right;
 	margin: 120px 10px 10px auto;
 	width: 250px;
@@ -257,7 +256,7 @@ img {
   .HEADER label.logo {
     width: 79%;
   }
-	.HEADER nav ul {
+    .HEADER nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -310,6 +309,7 @@ img {
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 3;
   }
   .HEADER nav ul li {
     display: block;
@@ -325,7 +325,6 @@ img {
   }
   .HEADER #check:checked ~ ul {
     left: 0;
-    z-index: 3;
   }
   .middle {
     margin: 0;
